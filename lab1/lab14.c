@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+
+int data[100];
+
+
+int *GetSet(int *a) {
+    
+    int i; 
+
+    
+    printf("How many number of element?\n");
+    scanf("%d", a);
+
+   
+    printf("Enter element:\n");
+    for (i = 0; i < *a; i++) {
+        scanf("%d", &data[i]);
+    }
+    
+    
+    return data;
+}
+
+int main() {
+    int *data;
+    int num;
+    int i; 
+
+    
+    data = GetSet(&num);
+
+   
+    for (i = 0; i < num; i++) {
+        printf("%d ", data[i]);
+    }
+    
+    return 0;
+}
