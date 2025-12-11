@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-and-run",
+            "type": "shell",
+            "command": "gcc ${file} -o ${fileBasenameNoExtension}.exe && .\\${fileBasenameNoExtension}.exe",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
