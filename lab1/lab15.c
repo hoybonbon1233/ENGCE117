@@ -1,34 +1,19 @@
 #include <stdio.h>
 
-
-
 int main() {
-    int number ;
-    int evenSum = 0 ; 
-    int oddSum = 0 ;   
+    int kingh_userInput;
 
-    
-    if (scanf("%d", &number) != 1) {
-        return 1 ;
-    }
-
-   
-    while (number != 0) {
-        
-        if (scanf("%d", &number) != 1) {
+    do {
+        printf("Enter a number (1-10): ");
+        if (scanf("%d", &kingh_userInput) != 1) {
             break;
         }
 
-        
-        if (number % 2 == 0) {
-            evenSum += number ;  
-        } else {
-            oddSum += number ;   
+        if (kingh_userInput < 1 || kingh_userInput > 10) {
+            printf("Error: Value must be 1-10.\n");
         }
-    }
+    } while (kingh_userInput < 1 || kingh_userInput > 10);
 
-   
-    printf("Even Sum: %d\n", evenSum) ;
-    printf("Odd Sum: %d\n", oddSum) ;
-    return 0 ;
+    printf("Input accepted: %d\n", kingh_userInput);
+    return 0;
 }
