@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int dayCode, hour ; 
+    int dayCode , hour ; 
 
     if (scanf("%d %d", &dayCode, &hour) != 2) {
         return 1 ;
@@ -21,7 +21,6 @@ int main() {
             }
             break;
 
-        
         case 6:
         case 7:
             printf("Weekend Relax Mode\n") ; 
