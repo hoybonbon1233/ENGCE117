@@ -7,11 +7,11 @@ int main() {
 
     
     if (scanf("%d %f", &customerType, &consumption_kwh) != 2) {
-        return 1;
+        return 1 ;
     }
 
     
-    if (customerType == 1) {
+    if ( customerType == 1 ) {
        
         if (consumption_kwh <= 100) {
             totalBill = consumption_kwh * 3.0 ;
@@ -20,7 +20,6 @@ int main() {
         }
     } 
     else if (customerType == 2) {
-        // Customer Type 2 (ธุรกิจ)
         if (consumption_kwh <= 500) {
             totalBill = consumption_kwh * 5.0 ;
         } else {
