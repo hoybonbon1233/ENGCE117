@@ -9,8 +9,6 @@ int main() {
     if (scanf("%d %f", &customerType, &consumption_kwh) != 2) {
         return 1 ;
     }
-
-    
     if ( customerType == 1 ) {
        
         if (consumption_kwh <= 100) {
@@ -29,8 +27,6 @@ int main() {
     else { printf("Invalid Customer Type\n") ;
         return 0 ; 
     }
-
-    
     if (totalBill > 0.0) {
         printf("%.2f\n", totalBill) ;
     }
